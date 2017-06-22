@@ -1,0 +1,5 @@
+---
+- hosts: vminopedes01
+  remote_user: root
+  roles:
+    - { role: java }

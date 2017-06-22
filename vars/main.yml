@@ -1,0 +1,14 @@
+---
+# vars file for java
+
+java_version:			 "1.7.0_80"
+jvm_file_name:                   "jdk-7u80-linux-x64.tar.gz"
+java_file:			 "jdk{{ java_version}}"
+root_directory:                  "/import/software"
+software_directory:		 "/import/temporal/subidas"
+ 
+java_install_dir:                "{{ root_directory }}/{{ java_file }}"
+jvm_installer:                   "{{ software_directory }}/{{ jvm_file_name }}"
+java_home:                       "{{ root_directory }}/java17_01"
+java_temp_dir:                    "/tmp"
+java:                            "{{ java_home }}/bin/java"

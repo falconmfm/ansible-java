@@ -1,0 +1,18 @@
+---
+# tasks file for java
+
+- name: Instala la maquina virtual Java
+  unarchive:
+    copy=no
+    creates="{{ java }}"
+    src="{{ jvm_installer }}"
+    dest="{{ root_directory }}"
+    owner="root"
+    group="root"
+  register: jvm_installed
+ 
+- name: Crea el enlace a la versión actual
+  command: /bin/sh -c "/bin/ln -sf {{java_install_dir}} {{java_home}}"
+    creates="{{ java_home }}"
+  register: jvm_directory_renamed
+  when: jvm_installed|success
