@@ -1,19 +1,19 @@
-Role Name
+Ansible-Java
 =========
 
- Se trata de la primera versiónd para la instalación de una versión de java.
+ Se trata de la primera versión de para la instalación de una versión de java.
 
-Requirements
+Requisitos
 ------------
 
  Requiere que se haya ejecutado previamente el role "import" , ya que la estructura de directorio debe estar creada previamente.
  El software de jdk correspondiente a la versión debe estar en /import/temporal/subidas
 
-Role Variables
---------------
+Variables del Role
+------------------
 java_home : Indica la ruta /import/software/java1X_0X que determinará el JAVA_HOME del entorno.
 
-Dependencies
+Dependencias
 ------------
 
 A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
